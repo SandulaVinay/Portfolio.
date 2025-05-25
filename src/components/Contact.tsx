@@ -1,5 +1,6 @@
 
 import { useState } from 'react';
+import { Linkedin, Github, Twitter, Mail, Phone } from 'lucide-react';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -48,20 +49,20 @@ const Contact = () => {
   const socialLinks = [
     {
       name: 'LinkedIn',
-      icon: '💼',
-      url: 'https://www.linkedin.com/in/vinay-sandula',
+      icon: Linkedin,
+      url: 'https://www.linkedin.com/in/sandulavinay',
       color: 'hover:bg-blue-600'
     },
     {
       name: 'GitHub',
-      icon: '💻',
-      url: 'https://github.com/vinay-sandula',
+      icon: Github,
+      url: 'https://github.com/SandulaVinay',
       color: 'hover:bg-gray-800'
     },
     {
       name: 'Twitter',
-      icon: '🐦',
-      url: 'https://twitter.com/vinay_sandula',
+      icon: Twitter,
+      url: 'https://twitter.com/svinay88',
       color: 'hover:bg-blue-400'
     }
   ];
@@ -98,22 +99,22 @@ const Contact = () => {
 
               <div className="space-y-6 mb-8">
                 <div className="flex items-center gap-4 p-4 bg-white/10 rounded-xl backdrop-blur-sm">
-                  <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center text-blue-600 text-xl">
-                    📧
+                  <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center text-blue-600">
+                    <Mail size={20} />
                   </div>
                   <div>
                     <h4 className="font-semibold">Email</h4>
-                    <p className="text-blue-100">vinay.sandula@example.com</p>
+                    <p className="text-blue-100">sandulavinay@gmail.com</p>
                   </div>
                 </div>
                 
                 <div className="flex items-center gap-4 p-4 bg-white/10 rounded-xl backdrop-blur-sm">
-                  <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center text-blue-600 text-xl">
-                    📱
+                  <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center text-blue-600">
+                    <Phone size={20} />
                   </div>
                   <div>
                     <h4 className="font-semibold">Phone</h4>
-                    <p className="text-blue-100">+1 (555) 123-4567</p>
+                    <p className="text-blue-100">+91 9849993991</p>
                   </div>
                 </div>
               </div>
@@ -121,17 +122,20 @@ const Contact = () => {
               <div>
                 <h4 className="font-semibold mb-4">Follow Me</h4>
                 <div className="flex gap-3">
-                  {socialLinks.map((link, index) => (
-                    <a
-                      key={index}
-                      href={link.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className={`w-12 h-12 bg-white/20 rounded-full flex items-center justify-center text-xl transition-all duration-300 ${link.color} hover:scale-110`}
-                    >
-                      {link.icon}
-                    </a>
-                  ))}
+                  {socialLinks.map((link, index) => {
+                    const IconComponent = link.icon;
+                    return (
+                      <a
+                        key={index}
+                        href={link.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={`w-12 h-12 bg-white/20 rounded-full flex items-center justify-center transition-all duration-300 ${link.color} hover:scale-110`}
+                      >
+                        <IconComponent size={20} />
+                      </a>
+                    );
+                  })}
                 </div>
               </div>
             </div>
