@@ -63,8 +63,9 @@ const Hero = () => {
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </button>
             <a
-              href="/Vinay-Sandula-Resume.pdf"
-              download
+              href="https://github.com/SandulaVinay/BI/blob/main/Vinay-Sandula-Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="group bg-white text-gray-700 px-8 py-4 rounded-full font-semibold flex items-center justify-center gap-2 border-2 border-gray-200 transition-all duration-300 hover:border-blue-300 hover:shadow-lg hover:scale-105"
             >
               Download CV
