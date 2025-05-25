@@ -49,19 +49,19 @@ const Contact = () => {
     {
       name: 'LinkedIn',
       icon: '💼',
-      url: 'https://www.linkedin.com/in/yourprofile',
+      url: 'https://www.linkedin.com/in/vinay-sandula',
       color: 'hover:bg-blue-600'
     },
     {
       name: 'GitHub',
       icon: '💻',
-      url: 'https://github.com/yourprofile',
+      url: 'https://github.com/vinay-sandula',
       color: 'hover:bg-gray-800'
     },
     {
       name: 'Twitter',
       icon: '🐦',
-      url: 'https://twitter.com/yourprofile',
+      url: 'https://twitter.com/vinay_sandula',
       color: 'hover:bg-blue-400'
     }
   ];
@@ -103,7 +103,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold">Email</h4>
-                    <p className="text-blue-100">your.email@example.com</p>
+                    <p className="text-blue-100">vinay.sandula@example.com</p>
                   </div>
                 </div>
                 

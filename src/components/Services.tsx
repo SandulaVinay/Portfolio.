@@ -10,6 +10,11 @@ const Services = () => {
       icon: '📊',
       title: 'Power BI',
       description: 'Interactive dashboards, reports, and business intelligence solutions'
+    },
+    {
+      icon: '📈',
+      title: 'Qlik',
+      description: 'Data visualization, analytics, and interactive reporting solutions'
     }
   ];
 
@@ -30,7 +35,7 @@ const Services = () => {
           <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto rounded-full"></div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {services.map((service, index) => (
             <div
               key={index}

@@ -20,6 +20,16 @@ const Skills = () => {
       icon: '🔄',
       title: 'Data Transformation',
       description: 'ETL processes and data pipeline development'
+    },
+    {
+      icon: '📈',
+      title: 'Qlik Development',
+      description: 'Interactive visualizations and business intelligence'
+    },
+    {
+      icon: '🐍',
+      title: 'Python Programming',
+      description: 'Data analysis, automation, and scripting'
     }
   ];
 
@@ -33,7 +43,7 @@ const Skills = () => {
           <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto rounded-full"></div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {skills.map((skill, index) => (
             <div
               key={index}
