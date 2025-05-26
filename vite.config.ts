@@ -19,5 +19,5 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  base: '/Portfolio.com/', // Correct - matches your repository name
+  base: '/Portfolio.com/', // Your actual repository name
 }));
