@@ -1,6 +1,6 @@
 
 import { useState } from 'react';
-import { Linkedin, Github, Twitter, Mail, Phone } from 'lucide-react';
+import { Linkedin, Github, Twitter, Mail, Phone, MapPin } from 'lucide-react';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -115,6 +115,16 @@ const Contact = () => {
                   <div>
                     <h4 className="font-semibold">Phone</h4>
                     <p className="text-blue-100">+91 9849993991</p>
+                  </div>
+                </div>
+
+                <div className="flex items-center gap-4 p-4 bg-white/10 rounded-xl backdrop-blur-sm">
+                  <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center text-blue-600">
+                    <MapPin size={20} />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold">Location</h4>
+                    <p className="text-blue-100">India</p>
                   </div>
                 </div>
               </div>
